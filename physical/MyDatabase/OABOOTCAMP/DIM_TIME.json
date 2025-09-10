@@ -1,0 +1,7 @@
+{
+  "physicalTable" : {
+    "name" : "DIM_TIME",
+    "sourceTable" : "physicalTable:MyDatabase.OABOOTCAMP.D_TIME",
+    "overrideSourceCacheSetting" : false
+  }
+}
