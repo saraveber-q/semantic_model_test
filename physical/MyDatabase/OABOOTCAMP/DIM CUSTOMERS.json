@@ -1,0 +1,7 @@
+{
+  "physicalTable" : {
+    "name" : "DIM CUSTOMERS",
+    "sourceTable" : "physicalTable:MyDatabase.OABOOTCAMP.D_CUSTOMERS",
+    "overrideSourceCacheSetting" : false
+  }
+}

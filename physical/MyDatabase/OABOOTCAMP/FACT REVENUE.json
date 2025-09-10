@@ -1,0 +1,7 @@
+{
+  "physicalTable" : {
+    "name" : "FACT REVENUE",
+    "sourceTable" : "physicalTable:MyDatabase.OABOOTCAMP.F_REVENUE",
+    "overrideSourceCacheSetting" : false
+  }
+}

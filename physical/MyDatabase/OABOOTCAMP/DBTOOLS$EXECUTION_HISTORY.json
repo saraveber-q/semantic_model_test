@@ -1,0 +1,51 @@
+{
+  "physicalTable" : {
+    "name" : "DBTOOLS$EXECUTION_HISTORY",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "ID",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : false
+    }, {
+      "name" : "HASH",
+      "dataType" : "LONGVARCHAR",
+      "length" : 32767,
+      "nullable" : true
+    }, {
+      "name" : "CREATED_BY",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "CREATED_ON",
+      "dataType" : "TIMESTAMP",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "UPDATED_BY",
+      "dataType" : "VARCHAR",
+      "length" : 255,
+      "nullable" : true
+    }, {
+      "name" : "UPDATED_ON",
+      "dataType" : "TIMESTAMP",
+      "length" : 0,
+      "nullable" : true
+    }, {
+      "name" : "STATEMENT",
+      "dataType" : "LONGVARCHAR",
+      "length" : 32767,
+      "nullable" : true
+    }, {
+      "name" : "TIMES",
+      "dataType" : "NUMERIC",
+      "length" : 0,
+      "nullable" : true
+    } ],
+    "caching" : {
+      "enable" : true,
+      "expiryTime" : 0
+    }
+  }
+}

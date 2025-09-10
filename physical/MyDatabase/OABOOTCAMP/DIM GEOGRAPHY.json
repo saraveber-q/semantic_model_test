@@ -1,0 +1,7 @@
+{
+  "physicalTable" : {
+    "name" : "DIM GEOGRAPHY",
+    "sourceTable" : "physicalTable:MyDatabase.OABOOTCAMP.D_GEOGRAPHY",
+    "overrideSourceCacheSetting" : false
+  }
+}
