@@ -1,0 +1,17 @@
+{
+  "physicalTable" : {
+    "name" : "DIM_CUSTOMERS",
+    "sourceTable" : "physicalTable:MyDatabase.OABOOTCAMP.D_CUSTOMERS",
+    "overrideSourceCacheSetting" : false,
+    "joins" : [ {
+      "rightTable" : "physicalTable:MyDatabase.OABOOTCAMP.FACT REVENUE",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MyDatabase.OABOOTCAMP.DIM_CUSTOMERS.CUST_NUMBER",
+        "rightColumn" : "physicalColumn:MyDatabase.OABOOTCAMP.FACT REVENUE.CUST_NUMBER"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    } ]
+  }
+}

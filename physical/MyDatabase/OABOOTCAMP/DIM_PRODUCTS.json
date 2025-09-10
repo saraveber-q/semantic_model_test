@@ -1,0 +1,17 @@
+{
+  "physicalTable" : {
+    "name" : "DIM_PRODUCTS",
+    "sourceTable" : "physicalTable:MyDatabase.OABOOTCAMP.D_PRODUCTS",
+    "overrideSourceCacheSetting" : false,
+    "joins" : [ {
+      "rightTable" : "physicalTable:MyDatabase.OABOOTCAMP.FACT REVENUE",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MyDatabase.OABOOTCAMP.DIM_PRODUCTS.PROD_ITEM_KEY",
+        "rightColumn" : "physicalColumn:MyDatabase.OABOOTCAMP.FACT REVENUE.PROD_ITEM_KEY"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    } ]
+  }
+}

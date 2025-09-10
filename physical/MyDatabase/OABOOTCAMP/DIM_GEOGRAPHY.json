@@ -1,0 +1,17 @@
+{
+  "physicalTable" : {
+    "name" : "DIM_GEOGRAPHY",
+    "sourceTable" : "physicalTable:MyDatabase.OABOOTCAMP.D_GEOGRAPHY",
+    "overrideSourceCacheSetting" : false,
+    "joins" : [ {
+      "rightTable" : "physicalTable:MyDatabase.OABOOTCAMP.FACT REVENUE",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MyDatabase.OABOOTCAMP.DIM_GEOGRAPHY.ADDR_KEY",
+        "rightColumn" : "physicalColumn:MyDatabase.OABOOTCAMP.FACT REVENUE.ADDR_KEY"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    } ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "physicalTable" : {
+    "name" : "DIM_PAID_TIME",
+    "sourceTable" : "physicalTable:MyDatabase.OABOOTCAMP.D_TIME",
+    "overrideSourceCacheSetting" : false,
+    "joins" : [ {
+      "rightTable" : "physicalTable:MyDatabase.OABOOTCAMP.FACT REVENUE",
+      "useJoinExpression" : false,
+      "joinConditions" : [ {
+        "leftColumn" : "physicalColumn:MyDatabase.OABOOTCAMP.DIM_PAID_TIME.DAY_DT",
+        "rightColumn" : "physicalColumn:MyDatabase.OABOOTCAMP.FACT REVENUE.TIME_PAID_DT"
+      } ],
+      "joinType" : "INNER",
+      "cardinality" : "MANY_TO_ONE"
+    } ]
+  }
+}
